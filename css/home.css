@@ -1,0 +1,37 @@
+html{
+	height: 100%;
+	width: 100%;
+}
+.g {
+background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0.33, rgb(14,173,173)), color-stop(0.67, rgb(0,255,255)));
+background-image: -moz-linear-gradient(center bottom, rgb(14,173,173) 33%, rgb(0,255,255) 67% );
+padding: 2px;
+}
+
+.g > div { background: #fff; }
+
+.c-border {
+background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0.33, rgb(175, 14, 145)), color-stop(0.67, rgb(255, 0, 200)));
+background-image: -moz-linear-gradient(center bottom, rgb(175, 14, 145) 33%, rgb(255, 0, 200) 67% );
+padding: 2px;
+}
+
+.c-border > div { background: #fff; }
+
+.lower-half{
+	background-color: #e3eced;
+}
+.f-border{
+  max-width: 250px;
+  padding: 1rem;
+  color: black;
+  border-width: 3px;
+  border-style: solid;
+  border-image:
+    linear-gradient(
+      to bottom,
+      red,
+      rgba(0, 0, 0, 0)
+    ) 1 100%;
+}
+
