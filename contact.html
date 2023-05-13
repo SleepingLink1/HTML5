@@ -16,7 +16,6 @@
 
   <meta name="theme-color" content="#fafafa">
   <link rel="stylesheet" href="css/home.css">
-  <link rel="stylesheet" href="css/avail.css">
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
 	<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.slim.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
@@ -43,54 +42,55 @@
 <div class="jumbotron text-center">
 		<div class="g">
 			<div>
-				<h1>Pricing & Availability:<br><h5>Rates starting at $22USD/hr<br>Minimum charge: $20USD</h5></p><h7>(Group discounts offered.
-          Contact for more info.)</h7></h1>
+				<h1>Contact Us</h1>
       </div>
 		</div>
 	</div>
 
-<div class="container">
-		<div class="lower-half">
-			<div class="row row-col4">
-				<div class="col-sm-4">
+<form action="https://webdevbasics.net/scripts/demo.php" method="get">
+  <div class="form-group">
+    <div class="form-row">
+    <div class="col">
+      <input type="text" class="form-control" placeholder="First name" required>
+    </div>
+    <div class="col">
+      <input type="text" class="form-control" placeholder="Last name" required>
+    </div>
+  </div>
+    <label for="exampleFormControlInput1" ><b>Email address</b></label>
+    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" required>
+  </div>
+  <div class="form-group">
+    <label for="exampleFormControlSelect1"><b>Number of pupils</b></label>
+    <select class="form-control" id="exampleFormControlSelect1" required>
+      <option>N/A</option>
+      <option>1</option>
+      <option>2</option>
+      <option>3</option>
+      <option>4</option>
+      <option>5+</option>
+    </select>
+  </div>
+  <div class="form-group">
+    <legend>Subjects of interests</legend>
 
-					<h2><u>Testimonials:</u></h2>
-					<div class="f-border">
-						<p><b>Anonymous</b>(Computer Science) - "Daniel was very patient and explained the material in a way that was easy to
-            understand. He gave great examples that related data structures to real-life scenarios"</p>
-            <p><b>Aleck</b>(Math) - "Thanks to Daniel, I was able to raise my grade in my matrices class by an entire letter
-              grade!"</p>
-            <p><b>Anonymous</b>(Computer Science) - "Daniel was wonderful to work with. He will modify his approach to match a student's learning
-            style. He is passionate and enthusiastic. He makes learning easy and enjoyable. I would highly recommend him!"</p>
-					</div>
-				</div>
-				<div class="col-sm-4">
-					<h3><u>Hours offered:</u><br></h3>
-					<div class="f-border">
-				  <ul class="no-bullets">
-            <li>M:7AM-8PM</li>
-            <li>T:7AM-8PM</li>
-            <li>W: 7AM-5PM</li>
-            <li>TH:7AM-5PM</li>
-            <li>F: 7AM-5PM</li>
-            <li><a class ="contacts"href="contact.html" ><u>Weekends:(Contact us)</u></a></li>
-          </ul>
-					</div>
-				</div>
-				<div class="col-sm-4">
-					<h3><u>Pricing:</u></h3>
-					<div class="f-border">
-           <p>Base rates: $22USD/hr per person<br>
-            Discounted rate of $15/hr per person for groups 3-5<br>
-            Virtual meetings starting at $20/hr for 2<br>
-             Ask about our month-to-month deals and finals exam cram plans
-           </p>
+    <input type="checkbox" id="math" name="course" value="Math">
+    <label for="course">Math</label><br>
+   <input type="checkbox" id="computerscience" name="course" value="Computerscience">
+    <label for="course">Computer Science</label><br>
+    <input type="checkbox" id="physics" name="course" value="Physics">
+    <label for="course">Physics</label><br>
+    <input type="checkbox" id="other" name="course" value="Other">
+    <label for="course">Other (Please indicate below.)</label><br>
 
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
+  </div>
+  <div class="form-group">
+    <label for="exampleFormControlTextarea1"><u>Additional comments or questions</u></label>
+    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+  </div>
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+<br><br>
 
 </body>
 </html>
