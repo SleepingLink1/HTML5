@@ -1,3 +1,17 @@
 .form-group{
+  background: #e3eced;
+  align: center;
+  margin: auto;
+  max-width: 800px;
+  padding: 1rem;
+  color: black;
+  border-width: 3px;
+  border-style: solid;
+   border-image:
+    linear-gradient(
+      to bottom,
+      lightseagreen,
+      rgba(0, 0, 0, 0)
+    ) 1 100%;
 
 }

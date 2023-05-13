@@ -1,6 +1,6 @@
 html{
-	height: 100%;
-	width: 100%;
+  margin-left: 5px;
+  margin-right: 5px;
 }
 .g {
 background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0.33, rgb(14,173,173)), color-stop(0.67, rgb(0,255,255)));
