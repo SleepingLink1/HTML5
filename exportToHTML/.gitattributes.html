@@ -1,0 +1,211 @@
+<html>
+<head>
+<title>.gitattributes</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #a9b7c6;}
+</style>
+</head>
+<body bgcolor="#2b2b2b">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+.gitattributes</font>
+</center></td></tr></table>
+<pre><span class="s0">## GITATTRIBUTES FOR WEB PROJECTS</span>
+<span class="s0">#</span>
+<span class="s0"># These settings are for any web project.</span>
+<span class="s0">#</span>
+<span class="s0"># Details per file setting:</span>
+<span class="s0">#   text    These files should be normalized (i.e. convert CRLF to LF).</span>
+<span class="s0">#   binary  These files are binary and should be left untouched.</span>
+<span class="s0">#</span>
+<span class="s0"># Note that binary is a macro for -text -diff.</span>
+<span class="s0">######################################################################</span>
+
+<span class="s0">## AUTO-DETECT</span>
+<span class="s0">##   Handle line endings automatically for files detected as</span>
+<span class="s0">##   text and leave all files detected as binary untouched.</span>
+<span class="s0">##   This will handle all files NOT defined below.</span>
+<span class="s0">* text=auto</span>
+
+<span class="s0">## SOURCE CODE</span>
+<span class="s0">*.bat      text eol=crlf</span>
+<span class="s0">*.coffee   text</span>
+<span class="s0">*.css      text</span>
+<span class="s0">*.htm      text</span>
+<span class="s0">*.html     text</span>
+<span class="s0">*.inc      text</span>
+<span class="s0">*.ini      text</span>
+<span class="s0">*.js       text</span>
+<span class="s0">*.json     text</span>
+<span class="s0">*.jsx      text</span>
+<span class="s0">*.less     text</span>
+<span class="s0">*.od       text</span>
+<span class="s0">*.onlydata text</span>
+<span class="s0">*.php      text</span>
+<span class="s0">*.pl       text</span>
+<span class="s0">*.py       text</span>
+<span class="s0">*.rb       text</span>
+<span class="s0">*.sass     text</span>
+<span class="s0">*.scm      text</span>
+<span class="s0">*.scss     text</span>
+<span class="s0">*.sh       text eol=lf</span>
+<span class="s0">*.sql      text</span>
+<span class="s0">*.styl     text</span>
+<span class="s0">*.tag      text</span>
+<span class="s0">*.ts       text</span>
+<span class="s0">*.tsx      text</span>
+<span class="s0">*.xml      text</span>
+<span class="s0">*.xhtml    text</span>
+
+<span class="s0">## DOCKER</span>
+<span class="s0">*.dockerignore text</span>
+<span class="s0">Dockerfile     text</span>
+
+<span class="s0">## DOCUMENTATION</span>
+<span class="s0">*.markdown   text</span>
+<span class="s0">*.md         text</span>
+<span class="s0">*.mdwn       text</span>
+<span class="s0">*.mdown      text</span>
+<span class="s0">*.mkd        text</span>
+<span class="s0">*.mkdn       text</span>
+<span class="s0">*.mdtxt      text</span>
+<span class="s0">*.mdtext     text</span>
+<span class="s0">*.txt        text</span>
+<span class="s0">AUTHORS      text</span>
+<span class="s0">CHANGELOG    text</span>
+<span class="s0">CHANGES      text</span>
+<span class="s0">CONTRIBUTING text</span>
+<span class="s0">COPYING      text</span>
+<span class="s0">copyright    text</span>
+<span class="s0">*COPYRIGHT*  text</span>
+<span class="s0">INSTALL      text</span>
+<span class="s0">license      text</span>
+<span class="s0">LICENSE      text</span>
+<span class="s0">NEWS         text</span>
+<span class="s0">readme       text</span>
+<span class="s0">*README*     text</span>
+<span class="s0">TODO         text</span>
+
+<span class="s0">## TEMPLATES</span>
+<span class="s0">*.dot        text</span>
+<span class="s0">*.ejs        text</span>
+<span class="s0">*.haml       text</span>
+<span class="s0">*.handlebars text</span>
+<span class="s0">*.hbs        text</span>
+<span class="s0">*.hbt        text</span>
+<span class="s0">*.jade       text</span>
+<span class="s0">*.latte      text</span>
+<span class="s0">*.mustache   text</span>
+<span class="s0">*.njk        text</span>
+<span class="s0">*.phtml      text</span>
+<span class="s0">*.tmpl       text</span>
+<span class="s0">*.tpl        text</span>
+<span class="s0">*.twig       text</span>
+
+<span class="s0">## LINTERS</span>
+<span class="s0">.babelrc      text</span>
+<span class="s0">.csslintrc    text</span>
+<span class="s0">.eslintrc     text</span>
+<span class="s0">.htmlhintrc   text</span>
+<span class="s0">.jscsrc       text</span>
+<span class="s0">.jshintrc     text</span>
+<span class="s0">.jshintignore text</span>
+<span class="s0">.prettierrc   text</span>
+<span class="s0">.stylelintrc  text</span>
+
+<span class="s0">## CONFIGS</span>
+<span class="s0">*.bowerrc       text</span>
+<span class="s0">*.cnf           text</span>
+<span class="s0">*.conf          text</span>
+<span class="s0">*.config        text</span>
+<span class="s0">.browserslistrc text</span>
+<span class="s0">.editorconfig   text</span>
+<span class="s0">.gitattributes  text</span>
+<span class="s0">.gitconfig      text</span>
+<span class="s0">.gitignore      text</span>
+<span class="s0">.htaccess       text</span>
+<span class="s0">*.npmignore     text</span>
+<span class="s0">*.yaml          text</span>
+<span class="s0">*.yml           text</span>
+<span class="s0">browserslist    text</span>
+<span class="s0">Makefile        text</span>
+<span class="s0">makefile        text</span>
+
+<span class="s0">## HEROKU</span>
+<span class="s0">Procfile    text</span>
+<span class="s0">.slugignore text</span>
+
+<span class="s0">## GRAPHICS</span>
+<span class="s0">*.ai   binary</span>
+<span class="s0">*.bmp  binary</span>
+<span class="s0">*.eps  binary</span>
+<span class="s0">*.gif  binary</span>
+<span class="s0">*.ico  binary</span>
+<span class="s0">*.jng  binary</span>
+<span class="s0">*.jp2  binary</span>
+<span class="s0">*.jpg  binary</span>
+<span class="s0">*.jpeg binary</span>
+<span class="s0">*.jpx  binary</span>
+<span class="s0">*.jxr  binary</span>
+<span class="s0">*.pdf  binary</span>
+<span class="s0">*.png  binary</span>
+<span class="s0">*.psb  binary</span>
+<span class="s0">*.psd  binary</span>
+<span class="s0">*.svg  text</span>
+<span class="s0">*.svgz binary</span>
+<span class="s0">*.tif  binary</span>
+<span class="s0">*.tiff binary</span>
+<span class="s0">*.wbmp binary</span>
+<span class="s0">*.webp binary</span>
+
+<span class="s0">## AUDIO</span>
+<span class="s0">*.kar  binary</span>
+<span class="s0">*.m4a  binary</span>
+<span class="s0">*.mid  binary</span>
+<span class="s0">*.midi binary</span>
+<span class="s0">*.mp3  binary</span>
+<span class="s0">*.ogg  binary</span>
+<span class="s0">*.ra   binary</span>
+
+<span class="s0">## VIDEO</span>
+<span class="s0">*.3gpp binary</span>
+<span class="s0">*.3gp  binary</span>
+<span class="s0">*.as   binary</span>
+<span class="s0">*.asf  binary</span>
+<span class="s0">*.asx  binary</span>
+<span class="s0">*.fla  binary</span>
+<span class="s0">*.flv  binary</span>
+<span class="s0">*.m4v  binary</span>
+<span class="s0">*.mng  binary</span>
+<span class="s0">*.mov  binary</span>
+<span class="s0">*.mp4  binary</span>
+<span class="s0">*.mpeg binary</span>
+<span class="s0">*.mpg  binary</span>
+<span class="s0">*.ogv  binary</span>
+<span class="s0">*.swc  binary</span>
+<span class="s0">*.swf  binary</span>
+<span class="s0">*.webm binary</span>
+
+<span class="s0">## ARCHIVES</span>
+<span class="s0">*.7z  binary</span>
+<span class="s0">*.gz  binary</span>
+<span class="s0">*.jar binary</span>
+<span class="s0">*.rar binary</span>
+<span class="s0">*.tar binary</span>
+<span class="s0">*.zip binary</span>
+
+<span class="s0">## FONTS</span>
+<span class="s0">*.ttf   binary</span>
+<span class="s0">*.eot   binary</span>
+<span class="s0">*.otf   binary</span>
+<span class="s0">*.woff  binary</span>
+<span class="s0">*.woff2 binary</span>
+
+<span class="s0">## EXECUTABLES</span>
+<span class="s0">*.exe binary</span>
+<span class="s0">*.pyc binary</span>
+</pre>
+</body>
+</html>

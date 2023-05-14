@@ -24,18 +24,19 @@
 
 </head>
 <body>
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-		<a class="navbar-brand" href="#">Navbar</a>
+<nav class="navbar navbar-expand-lg navbar-light" style="background-color: #e3f2fd;" >
+		<a class="navbar-brand" href="#"></a>
+  <img src="img/2840520.png" width="30" height="30" alt="">
 		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
 			aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
 			<span class="navbar-toggler-icon"></span>
 		</button>
 		<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
 			<div class="navbar-nav">
-				<a class="nav-item nav-link active" href="index.html">Home <span class="sr-only">(current)</span></a>
+				<a class="nav-item nav-link" href="index.html">Home </a>
 				<a class="nav-item nav-link" href="courses.html">Courses Offered</a>
 				<a class="nav-item nav-link" href="availability.html">Pricing & Availability</a>
-				<a class="nav-item nav-link" href="contact.html">Contact</a>
+				<a class="nav-item nav-link active" href="#">Contact <span class="sr-only">(current)</span></a>
 			</div>
 		</div>
 	</nav>
@@ -68,8 +69,7 @@
   </div>
   <div class="form-group">
     <label for="pupils"><b>Number of pupils</b></label>
-    <select class="form-control dark" id="pupils" required>
-      <option>N/A</option>
+    <select class="form-control bg-light" id="pupils" >
       <option>1</option>
       <option>2</option>
       <option>3</option>
@@ -78,24 +78,27 @@
     </select>
   </div>
   <div class="form-group">
+    <fieldset>
     <legend>Subjects of interests</legend>
 
-    <input type="checkbox" id="math" name="course" value="Math">
-    <label for="course">Math</label><br>
+    <input type="checkbox" id="math" name="math" value="Math">
+    <label for="math">Math</label><br>
    <input type="checkbox" id="computerscience" name="course" value="Computerscience">
-    <label for="course">Computer Science</label><br>
+    <label for="computerscience">Computer Science</label><br>
     <input type="checkbox" id="physics" name="course" value="Physics">
-    <label for="course">Physics</label><br>
+    <label for="physics">Physics</label><br>
     <input type="checkbox" id="other" name="course" value="Other">
-    <label for="course">Other (Please indicate below.)</label><br>
-
+    <label for="other">Other (Please indicate below.)</label><br>
+  </fieldset>
   </div>
   <div class="form-group">
     <label for="moreinfo"><u>Additional comments or questions</u></label>
     <textarea class="form-control dark" id="moreinfo" rows="3"></textarea>
-    <input type="checkbox" class="TAC" name="TAC" value="terms" required>
+    <input type="checkbox" id="TAC" name="TAC" value="terms" required>
     <label for="TAC">By checking this box, you consent to receive promotional offers and monthly newsletters</label><br>
-    <button type="submit" class="btn btn-primary">Submit</button>
+
+      <button type="submit" class="btn btn-primary" id="sub">Submit</button>
+
   </div>
 
 </form>
